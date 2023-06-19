@@ -1,4 +1,52 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  padding: 15px;
+}
+
+/* wireframe border */
+.demo {
+  border: 1px solid black;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+}
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+}
+
+.about {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.work {
+  margin-top: 15px;
+}
+.work-projects {
+  display: flex;
+  justify-content: space-around;
+}
+.project {
+  flex: 1 0 200px;
 }

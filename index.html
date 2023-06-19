@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eleanor Thell Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
-<body>
-    <header class="header">
-        <h1 class="header-title"></h1>
-            <ul class="nav">
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-            </ul>
+    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css" />
+  </head>
+  <body>
+    <header class="header demo">
+      <!--header-->
+      <h1 class="header-title demo">Portfolio</h1>
+      <ul class="nav demo">
+        <!--navigation-->
+        <li><a class="nav-link demo" href="#about">About</a></li>
+        <!--nav link-->
+        <li><a class="nav-link demo" href="#work">Work</a></li>
+        <li><a class="nav-link demo" href="#contact">Contact</a></li>
+      </ul>
     </header>
     <main class="main">
-        <section id="about" class="about">
-            <h2 class="about-title"></h2>
-            <img class="about-img">
-            <p class="about-desc"></p>
-        </section>
-        <section id="work" class="work">
-            <h2 class="work-title"></h2>
-            <div class="work-projects">
-                <div class="project">
-                    <img class="project-img">
-                    <h3 class="project-title"></h3>
-                    <p class="project-desc"></p>
-                </div>
-                <div class="project">
-                    <img class="project-img">
-                    <h3 class="project-title"></h3>
-                    <p class="project-desc"></p>
-                </div>
-                <div class="project">
-                    <img class="project-img">
-                    <h3 class="project-title"></h3>
-                    <p class="project-desc"></p>
-                </div>
-                <div class="project">
-                    <img class="project-img">
-                    <h3 class="project-title"></h3>
-                    <p class="project-desc"></p>
-                </div>
-            </div>
-        </section> 
+      <section id="about" class="about demo">
+        <!--about section-->
+        <h2 class="about-title demo">About</h2>
+        <div class="about-content demo">
+          <img class="about-img demo" src=".\assets\images\image-1.jpg" />
+          <p class="about-desc demo">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ab
+            sit dignissimos culpa aperiam. Quod, accusamus nihil nostrum
+            corporis quia, at corrupti blanditiis, quos voluptatibus expedita
+            iure! Incidunt, numquam exercitationem.
+          </p>
+        </div>
+      </section>
+      <section id="work" class="work demo">
+        <!--work section-->
+        <h2 class="work-title demo">Work</h2>
+        <div class="work-projects demo">
+          <!--flexbox-->
+          <div class="project demo">
+            <!--project tile w/in flexbox-->
+            <img class="project-img" />
+            <h3 class="project-title"></h3>
+            <p class="project-desc"></p>
+          </div>
+          <div class="project demo">
+            <img class="project-img" />
+            <h3 class="project-title"></h3>
+            <p class="project-desc"></p>
+          </div>
+          <div class="project demo">
+            <img class="project-img" />
+            <h3 class="project-title"></h3>
+            <p class="project-desc"></p>
+          </div>
+          <div class="project demo">
+            <img class="project-img" />
+            <h3 class="project-title"></h3>
+            <p class="project-desc"></p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer id="contacts" class="footer contacts">
-        <h2 class="contacts-title"></h2>
-        <ul class="contacts-list">
-            <li class="contacts-link"></li>
-            <li class="contacts-link"></li>
-            <li class="contacts-link"></li>
-        </ul>
+    <footer id="contact" class="footer contact demo">
+      <!--contact section-->
+      <h2 class="contact-title demo">Contact Me</h2>
+      <ul class="contact-list demo">
+        <li><a class="contact-link demo" href="">Email</a></li>
+        <!--contact link-->
+        <li><a class="contact-link demo" href="">LinkedIn</a></li>
+        <li><a class="contact-link demo" href="">GitHub</a></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
