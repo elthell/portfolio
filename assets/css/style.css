@@ -1,18 +1,15 @@
+/* universal */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* overall element styling */
 header,
 main,
 footer {
   padding: 15px;
-}
-
-/* wireframe border */
-.demo {
-  border: 1px solid black;
 }
 
 ul {
@@ -21,16 +18,36 @@ ul {
 li {
   display: inline-block;
 }
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
 
+h1, h2 {
+  padding: 15px;
+}
+
+/* wireframe border */
+.demo {
+  border: 1px solid black;
+}
+
+/* header */
 header {
   width: 100%;
 }
 .nav {
   position: absolute;
-  top: 20px;
   right: 5%;
+  top: 3%;
+}
+.nav-link {
+  margin: 0 15px;
+  padding: 42px 15px;
 }
 
+/* main */
+/* about section */
 .about {
   width: 100%;
   margin-bottom: 15px;
@@ -39,14 +56,52 @@ header {
   display: flex;
   justify-content: center;
 }
+.about-img {
+  margin: 15px;
+  padding: 10px;
+}
+.about-desc {
+  padding: 20px;
+}
 
+/* work section */
 .work {
   margin-top: 15px;
 }
 .work-projects {
   display: flex;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .project {
-  flex: 1 0 200px;
+  margin: 20px;
+  padding: 20px;
+  flex: 0 0 22%;
+}
+/* when you hover on a project card */
+.project:hover {
+  flex: 0 0 25%;
+}
+.project h3, p {
+  text-align: center;
+}
+.project-img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  bottom: 0%;
+}
+.contact-list {
+  position: absolute;
+  left: 7%;
+  bottom: 40%;
+}
+.contact-link {
+  margin: 0 15px;
+  padding: 38px 15px;
 }
