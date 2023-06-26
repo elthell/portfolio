@@ -43,7 +43,6 @@ li a {
 li a:hover {
   border: 5px solid var(--green-1);
   color: var(--pink);
-  text-decoration: underline;
 }
 
 h1, h2 {
@@ -67,7 +66,7 @@ header {
 }
 .nav-link {
   margin: 0 15px;
-  padding: 42px 15px;
+  padding: 45px 15px;
   background-color: var(--green-2);
 }
 
@@ -119,34 +118,42 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-left: 92px;
   border: 5px solid var(--green-1);
   background-color: var(--light);
 }
 .project {
-  height: 350px;
   margin: 20px;
   border: 5px solid var(--green-1);
-  background-image: url("../images/image-1.jpg");
   background-size: cover;
+  text-decoration: none;
+}
+/* when hovering over a project tile */
+.project:hover {
+  border: 15px double var(--pink);
 }
 /* first project is larger than others*/
 .project-1 {
+  background-image: url("../images/project-1-img.jpg");
   flex: 1 0 85%;
+  height: 400px;
 }
 /* other projects */
 .project-other {
+  background-image: url("../images/project-2-img.jpg");
   flex: 0 0 22%;
+  height: 350px;
 }
 .project h3, .project p {
+  color: black;
   text-align: left;
   margin-right: 50px;
-  padding-left: 10px;
+  padding: 0 10px;
   background-color: var(--pink);
 }
 .project h3 {
-  margin-top: 265px;
+  margin-top: 10px;
   padding-top: 10px;
 }
 .project p {
@@ -157,6 +164,7 @@ section {
 footer {
   position: relative;
   bottom: 0%;
+  border-top: 5px solid var(--green-1);
   background-color: var(--dark);
   color: var(--light);
 }
@@ -170,4 +178,27 @@ footer {
   margin: 0 15px;
   padding: 38px 15px;
   background-color: var(--green-2);
+}
+
+/* media rules to resize elements w/ screen size */
+@media screen and (max-width: 992px) {
+  .project-other {
+    flex: 0 0 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-other {
+    flex: 0 0 75%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-img {
+    display: none;
+  }
+  .project-other {
+    flex: 0 0 80%;
+  }
+  .contact-list {
+    left: 10%;
+  }
 }
